@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROMEDIOALUMNO5834324.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="PROMEDIO ALUMNO"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="MediumPurple"/>
+            <Image Source="lumnos.png"
+                   HeightRequest="250"
+                   WidthRequest="300"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Ingrese la calificación 1"
+                   FontSize="15"/>
+            <Entry x:Name="c1"
+                   Placeholder="Calificación 1"
+                   Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese la calificación 2"
+                   FontSize="15"/>
+            <Entry x:Name="c2"
+                   Placeholder="Calificación 2"
+                   Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese la calificación 3"
+                   FontSize="15"/>
+            <Entry x:Name="c3"
+                   Placeholder="Calificación 3"
+                   Keyboard="Numeric"/>
+
+            <Label Text="Ingrese la calificación 4"
+                   FontSize="15"/>
+            <Entry x:Name="c4"
+                   Placeholder="Calificación 4"
+                   Keyboard="Numeric"/>
+
+            <Label Text="Ingrese la calificación 5"
+                   FontSize="15"/>
+            <Entry x:Name="c5"
+                   Placeholder="Calificación 5"
+                   Keyboard="Numeric"/>
+
+            <Label x:Name="prom"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="MediumPurple"
+                   FontSize="18"
+                   Text="El promedio del alumno es: "/>
+
+            <Button BackgroundColor="White"
+                    BorderColor="MediumPurple"
+                    BorderWidth="3"
+                    CornerRadius="30"
+                    Text="Calcular Promedio"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
